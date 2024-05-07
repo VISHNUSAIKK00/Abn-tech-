@@ -1,1 +1,2 @@
 # Abn-tech-
+docker praties 
