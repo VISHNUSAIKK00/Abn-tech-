@@ -1,0 +1,15 @@
+# This is a sample Dockerfile
+
+FROM python:3.6
+
+# Install the necessary dependencies
+RUN apt-get update && apt-get install -y nginx
+
+# Copy the application code to the container
+COPY . /var/www/html
+
+# Expose port 80
+EXPOSE 80
+
+# Start the Nginx server
+CMD ["nginx", "-g", "daemon off;"]
